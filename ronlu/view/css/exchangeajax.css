@@ -1,0 +1,155 @@
+@-webkit-keyframes flip {
+            from {
+                -webkit-transform: rotateY(270deg);
+            }
+
+            to {
+                -webkit-transform: rotateY(360deg);
+            }
+        }
+
+        @keyframes flip {
+            from {
+                transform: rotateY(270deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+		@keyframes bring {
+            from {
+			    transform: rotate(45deg);
+                left: 1800px;
+                top: 220px;
+            }
+            to {
+			    transform: rotate(360deg);
+                left: 650px;
+                top: 220px;
+            }
+        }
+        @-webkit-keyframes bring {
+            from {		
+			 -webkit-transform: rotate(45deg);
+                left: 1800px;
+                top: 220px;
+            }
+            to {
+			-webkit-transform: rotate(360deg);
+                left: 650px;
+                top: 220px;
+            }
+        }
+
+#exchange{
+width: 500px; 
+	height: 450px; 
+	position: absolute; 
+	top: 210px; 
+	left: 50px;
+	border: 5px double #808000;
+	-webkit-animation: flip 1.5s; 
+    animation: flip 1.5s;
+	background: #F0E68C;
+	overflow-y: scroll;
+}
+#help{
+position: absolute; 
+	top: 220px; 
+	left: 650px;
+	width: 300px; 
+	height: 400px;
+	border: 5px double #808000;
+	-webkit-animation: bring 1.5s ease; 
+    animation: bring 1.5s ease;
+	background: #F0E68C;
+	text-align: center;
+	white-space: normal;
+}
+#warning{
+position: absolute;
+top: 40px;
+left: 20px;
+     font: bold 40px Arial, Helvetica;
+	 color: red;
+}
+#curDiv{
+position: absolute;
+top: 10px;
+left: 20px;
+     font: italic bold 30px Georgia, serif;
+	 color: #191970;
+}
+
+	#curSub:hover {
+		color: #C71585;
+		
+		-moz-transition: color 0.25s ease-in-out;
+		-webkit-transition: color 0.25s ease-in-out;
+		transition: color 0.25s ease-in-out;
+	}
+
+	#curSub:focus {
+		outline: none;
+	}
+	#curSub:active {
+		background: #F0FFFF;
+	}
+
+#curInput{
+	border-radius: 5px;
+	border: 1px solid blue;
+	width: 100px; 
+	height: 30px; 
+}
+#curInput:focus{
+outline: none;
+box-shadow:0px 0px 8px 2px green;	
+border: 1px solid white;
+}
+.divInput{
+position: absolute;
+    font: bold 25px Arial, Helvetica;
+}
+.dummy{
+ visibility: hidden;
+width: 10px; 
+	height: 25px; 
+}
+#curSub{
+width: 75px; 
+	height: 33px; 
+	background: -webkit-linear-gradient(#8DD297, #398525); 
+	background: linear-gradient(#8DD297, #398525); 
+	box-shadow: inset 0px 0px 6px #fff;
+	-webkit-box-shadow: inset 0px 0px 6px #fff;
+	border: 1px solid #5ea617;
+	border-radius: 5px;
+	
+	font: bold 13px Helvetica, Sans-Serif; text-align: center;
+	text-transform: uppercase; text-decoration: none;
+	color: #147032;
+	text-shadow: 0px 1px 2px #b4d1ad;
+	
+	-moz-transition: color 0.25s ease-in-out;
+	-webkit-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
+	
+}
+.curBox{
+width: 80px; 
+	height: 25px; 		
+}
+#checkbox-1{
+width: 20px; 
+	height: 20px; 
+	border-radius: 2px;
+}
+#checkbox{
+position: absolute;
+top: 50px;
+left: 20px;
+     font: bold 20px Arial, Helvetica;
+	 color: brown;
+}

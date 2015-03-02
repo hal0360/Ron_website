@@ -1,0 +1,25 @@
+#admin{
+position: absolute;
+   top: 220px;
+   left: 40px;
+   -webkit-animation: flip 1.5s; 
+    animation: flip 1.5s;
+}
+
+@-webkit-keyframes flip {
+            from {
+			    opacity: 0.0;
+            }
+            to {
+			    opacity: 1.0;
+            }
+        }
+
+        @keyframes flip {
+            from {
+			    opacity: 0.0;
+            }
+            to {
+			    opacity: 1.0;
+            }
+        }

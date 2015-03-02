@@ -1,0 +1,74 @@
+
+canvas{
+    cursor:url(../Graphics/crosshair.cur),auto;
+	width: 940px; 
+	height: 520px; 
+	position: absolute; 
+	top: 210px; 
+	left: 40px;
+	border: 5px ridge #C0C0C0;
+	-webkit-animation: zoom 1.5s; 
+    animation: zoom 1.5s;
+}
+img[src$=".gif"], img[src$=".png"] {
+	image-rendering: -moz-crisp-edges;         
+    image-rendering:   -o-crisp-edges;         
+	image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor; 
+}
+#help{
+background: url('../Graphics/military2.jpg');
+position: absolute; 
+	top: 220px; 
+	left: 1020px;
+	width: 300px; 
+	height: 400px;
+	border: 5px ridge #C0C0C0;
+	-webkit-animation: bring 1.5s ease; 
+    animation: bring 1.5s ease;
+	text-align: center;
+	white-space: normal;
+	-webkit-animation: bring 1.5s ease; 
+    animation: bring 1.5s ease;
+	color: yellow;
+}
+
+@keyframes bring {
+            from {
+                left: 1800px;
+                top: 220px;
+            }
+            to {
+                left: 1020px;
+                top: 220px;
+            }
+        }
+        @-webkit-keyframes bring {
+            from {		
+                left: 1800px;
+                top: 220px;
+            }
+            to {
+                left: 1020px;
+                top: 220px;
+            }
+        }
+
+@-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0.2);
+            }
+            to {
+                -webkit-transform: scale(1);
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0.2);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
